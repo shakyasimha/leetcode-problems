@@ -26,6 +26,8 @@ class RomanNumeral:
         result = str()
         
         for i in val: 
+            if num == 0: 
+                break
             result += (num//i)*kv_pair[i]
             num %= i 
             
